@@ -9,6 +9,9 @@ import {
   gql,
 } from "@apollo/client";
 
+
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 export const client = new ApolloClient({

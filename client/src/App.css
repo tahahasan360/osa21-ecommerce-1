@@ -1,0 +1,18 @@
+.item-container {
+    background-color: blue;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.item {
+    margin-top: 20px;
+    width: 15%;
+    background-color: red;
+    height: 30vh;
+    margin-left: 5%;
+    margin-right: 5%
+}
