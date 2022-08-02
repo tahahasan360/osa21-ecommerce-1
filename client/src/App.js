@@ -1,5 +1,6 @@
 import { gql, useMutation, useQuery, useApolloClient } from "@apollo/client";
 import './App.css'
+import Sidebar from './Sidebar';
 
 const FIND_ALL_BOOKS = gql`
   query findAllBooks {
@@ -23,6 +24,12 @@ function App() {
   console.log(data);
   return <div className="App">
     <div className="item-container">
+      <Item/>
+      <Item/>
+      <Item/>
+      <Item/>
+      <Item/>
+      <Item/>
       <Item/>
       <Item/>
       <Item/>
