@@ -1,6 +1,7 @@
 /* src/Sidebar.js */
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
+import './Sidebar.css';
 
 export default props => {
   return (
@@ -9,13 +10,13 @@ export default props => {
         Home
       </a>
       <a className="menu-item" href="/salads">
-        Salads
+        Profile
       </a>
       <a className="menu-item" href="/pizzas">
-        Pizzas
+        Cart
       </a>
       <a className="menu-item" href="/desserts">
-        Desserts
+        Categories
       </a>
     </Menu>
   );

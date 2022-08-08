@@ -23,6 +23,7 @@ function App() {
   const { loading, error, data } = useQuery(FIND_ALL_BOOKS);
   console.log(data);
   return <div className="App">
+    <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
     <div className="item-container">
       <Item/>
       <Item/>
