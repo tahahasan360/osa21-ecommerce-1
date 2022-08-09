@@ -1,5 +1,6 @@
 import { gql, useMutation, useQuery, useApolloClient } from "@apollo/client";
 import './App.css'
+import Sidebar from './Sidebar';
 
 const FIND_ALL_BOOKS = gql`
   query findAllBooks {
@@ -41,14 +42,12 @@ function App() {
   
   const { loading, error, data } = useQuery(FIND_ALL_BOOKS);
   console.log(data);
-
-  return (
-    <div className="App">
-      <div className="item-container">
+  return <div className="App">
+    <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+    <div className="item-container">
         {products.map(product => <Item id = {String(product.id)} name = {String(product.name)} price = {String(product.price)}/>)}
       </div>
-    </div>
-  )
+    </div>;
 }
 
 export default App;
