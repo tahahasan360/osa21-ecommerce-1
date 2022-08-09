@@ -66,6 +66,11 @@
     font-weight: bold;
     font-size: 24px;
   }
+
+  img {
+    display: inline-block;
+    margin-right: 10px;
+  }
   
   .bm-item:hover {
     color: #ffffff;
